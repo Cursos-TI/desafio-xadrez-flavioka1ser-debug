@@ -15,6 +15,8 @@ int main() {
     //Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
     for (int i = 1; i <= bispo; i++) { // Estrutura de repetição que executa 5 vezes
         printf("Movendo o bispo para a diagonal %d\n", i);
+
+        printf("\n");
     }
 
     // Implementação de Movimentação da Torre
@@ -25,6 +27,9 @@ int main() {
         for (int i = 1; i <= torre; i++) { // Estrutura de repetição que executa 5 vezes
             printf("Movendo a torre para a horizontal %d\n", i); // Movimentação horizontal
             printf("Movendo a torre para a vertical %d\n", i); // Movimentação vertical
+       
+            printf("\n");
+        
         }
     } while (0); // Estrutura de repetição que executa apenas uma vez
 
@@ -37,6 +42,9 @@ int main() {
             printf("Movendo a rainha para a horizontal %d\n", i); // Movimentação horizontal
             printf("Movendo a rainha para a vertical %d\n", i); // Movimentação vertical
             printf("Movendo a rainha para a diagonal %d\n", i); // Movimentação diagonal
+       
+            printf("\n");
+       
         }
         break; // Sai do loop após uma iteração
     }
@@ -52,10 +60,12 @@ int main() {
         } 
         printf("Movendo o cavalo para a direita %d\n", cavalo); // Movimentação em "L"
         movimento = 0; // Define movimento como falso para sair do loop      
-        
+    
+         printf("\n");
     }
 
 
 
     return 0;
+
 }
