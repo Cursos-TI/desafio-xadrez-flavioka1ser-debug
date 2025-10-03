@@ -61,7 +61,7 @@ int main() {
         printf("Movendo o cavalo para a direita %d\n", cavalo); // Movimentação em "L"
         movimento = 0; // Define movimento como falso para sair do loop      
     
-
+        
     }
 
 
