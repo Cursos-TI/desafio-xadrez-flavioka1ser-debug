@@ -5,6 +5,9 @@ int main() {
     const int torre = 5; // A torre pode se mover 5 casas na horizontal ou vertical
     const int bispo = 5; // O bispo pode se mover 5 casas na diagonal
     const int rainha = 8; // A rainha pode se mover 8 casas em qualquer direção
+    const int cavalo = 3; // O cavalo pode se mover 3 casas em forma de "L"
+    int movimento = 1; // Variável para controlar o loop do cavalo
+
 
     // Implementação de Movimentação do Bispo
     printf("O bispo pode se mover %d casas na diagonal.\n", bispo);
@@ -38,6 +41,19 @@ int main() {
         break; // Sai do loop após uma iteração
     }
 
+       // Implementação de Movimentação do Cavalo
+    printf("O cavalo pode se mover em 'L' %d vezes.\n", cavalo);
+
+    //Utilize uma estrutura de repetição para simular a movimentação do Cavalo em "L".
+       while (movimento) { // Estrutura de repetição que executa enquanto movimento for verdadeiro
+        
+        for (int i = 1; i < 3; i++) { // Estrutura de repetição que executa 3 vezes
+            printf("Movendo o cavalo para cima %d\n", i); // Movimentação em "L"
+        } 
+        printf("Movendo o cavalo para a direita %d\n", cavalo); // Movimentação em "L"
+        movimento = 0; // Define movimento como falso para sair do loop      
+        
+    }
 
 
 
